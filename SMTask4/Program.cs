@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SMTask4
 {
@@ -10,6 +6,15 @@ namespace SMTask4
     {
         static void Main(string[] args)
         {
+            Integral integral = new Integral();
+            Equation equation = new Equation();
+
+            integral.Count1DIntegral();
+            integral.Count2DIntegral();
+            equation.SolveEquation();
+           
+            Console.Write("Press any key to continue...");
+            Console.ReadKey();
         }
     }
 }
